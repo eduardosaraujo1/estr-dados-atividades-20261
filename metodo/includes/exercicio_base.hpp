@@ -1,3 +1,4 @@
+#pragma once
 class Exercicio {
 public:
   virtual int execute() = 0;
