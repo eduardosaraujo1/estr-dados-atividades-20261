@@ -1,4 +1,4 @@
-#include "lib/insertionsort.cpp"
+#include "lib/mergesort.cpp"
 #include <iostream>
 
 using namespace std;
@@ -13,8 +13,9 @@ int main() {
     cin >> vetor[i];
   }
 
+  mergesort(vetor, 0, LEN - 1);
   // quicksort(vetor, 0, LEN - 1);
-  insertionsort(vetor, LEN);
+  // insertionsort(vetor, LEN);
   // bubblesort(vetor, LEN);
 
   for (auto v : vetor) {
