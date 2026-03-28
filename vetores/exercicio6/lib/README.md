@@ -69,8 +69,8 @@ WIP
 
 # Referências
 
-https://liususan091219.github.io/teaching/cs284_20s/slides/sort_2.pdf
-https://www.youtube.com/watch?v=g06hNBhoS1k
-https://thimbleby.gitlab.io/algorithm-wiki-site/wiki/shell_sort
-https://www.udiprod.com/shell-sort/#analysis
-https://www.geeksforgeeks.org/dsa/shell-sort/
+- https://liususan091219.github.io/teaching/cs284_20s/slides/sort_2.pdf
+- https://www.youtube.com/watch?v=g06hNBhoS1k
+- https://thimbleby.gitlab.io/algorithm-wiki-site/wiki/shell_sort
+- https://www.udiprod.com/shell-sort/#analysis
+- https://www.geeksforgeeks.org/dsa/shell-sort/
