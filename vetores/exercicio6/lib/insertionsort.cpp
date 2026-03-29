@@ -4,13 +4,13 @@ void insertionsort(int *arr, int len) {
   // 20 50 79 46 100 76 70 11 19 10
   for (int i = 1; i < len; ++i) {
     int cur = arr[i];
-    int j = i - 1;
+    int j = i;
 
-    while (arr[j] > cur && j >= 0) {
-      arr[j + 1] = arr[j];
+    while (arr[j - 1] > cur && j > 0) {
+      arr[j] = arr[j-1];
       --j;
     }
 
-    arr[j + 1] = cur;
+    arr[j] = cur;
   }
 }
