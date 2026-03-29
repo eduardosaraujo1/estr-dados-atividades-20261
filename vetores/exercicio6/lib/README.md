@@ -1,6 +1,12 @@
 # História e origem do ShellSort
 
-WIP
+O Shell Sort, desenvolvido por Donald Shell em 1959, surgiu como uma das primeiras tentativas de superar as limitações de desempenho dos algoritmos de ordenação por comparação simples, como o Insertion Sort.
+
+Naquela época, a computação estava em seus primórdios e a eficiência no processamento de dados era um desafio crítico, já que algoritmos comuns levavam um tempo proibitivo para organizar grandes volumes de informações devido ao excesso de trocas entre elementos adjacentes.
+
+A sacada genial de Donald Shell foi perceber que o Insertion Sort é extremamente eficiente quando o array já está "quase ordenado", mas muito lento quando elementos menores estão posicionados no final da lista, exigindo inúmeras movimentações para chegar ao início.
+
+A origem do Shell Sort é marcante na ciência da computação por ser o primeiro algoritmo a quebrar a barreira da complexidade quadrática O(n^2) para algoritmos de ordenação in-place, embora sua performance exata dependa inteiramente da sequência de gaps escolhida (mais sobre isso a seguir).
 
 # Explicação do ShellSort
 
@@ -219,7 +225,7 @@ int main() {
 
 O algorítmo do ShellSort é uma generalização do Insertion Sort, fato que o faz muito mais complexo e abre espaço para tantas variações de gap-sequences.
 
-As propriedades discutidas do ShellSort demonstram que ele pode ter uma melhora de performance em relação ao ShellSort, mas sua complexidade de tempo ainda é inferior à de algorítmos como Heap Sort, Merge Sort e Quick Sort.
+As propriedades discutidas do ShellSort demonstram que ele pode ter uma melhora de performance em relação ao Insertion Sort, e apesar complexidade de tempo ainda é inferior à de algorítmos como Heap Sort, Merge Sort e Quick Sort, sua relativa facilidade de implementação e eficiência em listas de tamanho moderado o mantém utilizado.
 
 # Referências
 
