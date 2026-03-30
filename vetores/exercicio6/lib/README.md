@@ -18,50 +18,50 @@ Sua principal função é ordenar listas de forma simples e sem uso de memória 
 
 ### 1. Sequência original de Shell
 
-**Fórmula:** \(1, \frac{N}{2}, \frac{N}{4}, \dots y = \frac{N}{2^x}\) para \(y \geq 1\).
+**Fórmula:** $1, \frac{N}{2}, \frac{N}{4}, \dots y = \frac{N}{2^x}$ para $y \geq 1$.
 
 **Upper‑bound conhecido:**
 
-- No pior caso, \(O(N^2)\).
+- No pior caso, $O(N^2)$.
 
 ### 2. Knuth (Knuth’s increments)
 
-**Fórmula:** \(1, 4, 13, 40, \dots (3^k - 1)/2\) para \(k \ge 0\).
+**Fórmula:** $1, 4, 13, 40, \dots (3^k - 1)/2$ para $k \ge 0$.
 
 **Upper‑bound:**
 
-- Complexidade pior‑caso é \(O(N^{3/2})\).
+- Complexidade pior‑caso é $O(N^{3/2})$.
 - É melhor que a sequência original de Shell experimentalmente.
 
 ### 3. Hibbard’s increments
 
-**Fórmula:** \(1, 3, 7, 15, 31, 63, \dots, 2^k - 1\) para \(k \geq 1\).
+**Fórmula:** $1, 3, 7, 15, 31, 63, \dots, 2^k - 1$ para $k \geq 1$.
 
 **Upper‑bound:**
 
-- Pior caso: \(O(N^{3/2})\).
-- Também tem limite inferior \(\Omega(N^{3/2})\), então possui menos variação.
+- Pior caso: $O(N^{3/2})$.
+- Também tem limite inferior $\Omega(N^{3/2})$, então possui menos variação.
 
 ### 4. Papernov & Stasevich
 
-**Fórmula:** \(1, 3, 5, 9, 17, 33, 65, \dots, 2^k + 1\) para .
+**Fórmula:** $1, 3, 5, 9, 17, 33, 65, \dots, 2^k + 1 \quad \text{para } k \geq 0$
 
 **Upper e lower‑bound:**
 
-- Complexidade pior‑caso é \(O(N^{3/2})\).
-- Compleixdade melhor-caso é \(\Omega(N \log N)\) se aplica para esta família de incrementos.
+- Complexidade pior‑caso é $O(N^{3/2})$.
+- Compleixdade melhor-caso é $\Omega(N \log N)$ se aplica para esta família de incrementos.
 
 ### 5. Sequência de Pratt
 
-**Sequência:** \(1, 2, 3, 4, 6, 9, 8, 12, 18, 27, 16, 24, 36, 54, 81, \dots\)
+**Sequência:** $1, 2, 3, 4, 6, 9, 8, 12, 18, 27, 16, 24, 36, 54, 81, \dots$
 
-- Correspondem a todos os números da forma \(2^p \cdot 3^q\) em ordem crescente.
+- Correspondem a todos os números da forma $2^p \cdot 3^q$ em ordem crescente.
 - Desvantagem: o número de passes nessa sequência é muito grande, por isso na prática tende a ser mais lento que as outras gap-choices.
 
 **Upper e lower‑bound:**
 
-- Complexidade pior‑caso é \(\Theta(N \log^2 N)\).
-- Assim como Hillbard's Increments, possui pouca variação (por isso o uiso da notação \(\Theta\) no lugar de O).
+- Complexidade pior‑caso é $\Theta(N \log^2 N)$.
+- Assim como Hillbard's Increments, possui pouca variação (por isso o uiso da notação $\Theta$ no lugar de O).
 
 ### 6. Incrementos de Sedgewick (Sedgewick’s increments)
 
@@ -79,14 +79,14 @@ Sua principal função é ordenar listas de forma simples e sem uso de memória 
 
 **Upper‑bound:**
 
-- Pior‑caso é \(O(N^{4/3})\) para essas sequência.
+- Pior‑caso é $O(N^{4/3})$ para essas sequência.
 - É uma das melhores sequências "teóricas" conhecidas em termos de expoente.
 
 ### 7. Marcin Ciura
 
 **Sequência:**
 
-- \(h = 701, 301, 132, 57, 23, 10, 4, 1\)
+- $h = 701, 301, 132, 57, 23, 10, 4, 1$
 - Não existe uma fórmula simples/algorítmica fechada; é uma sequência tabelada.
 
 **Upper‑bound:** Não aplicável
